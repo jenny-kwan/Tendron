@@ -1,16 +1,14 @@
-public void setup()
-{
-  size(500, 500);  
-  background(255);
-  noLoop();
+void setup() {
+    size(500, 500);
+    background(207, 233, 255); // Pastel light sky blue 💙☁️
+    noLoop();
 }
 
-public void draw()
-{
-  background(255);
-  Cluster c = new Cluster(50, 250, 250); // initial number of segments in the tendril and starting (x,y) coordinate
+void draw() {
+    background(207, 233, 255); // Clears screen before drawing a new Tendron
+    new Cluster(60, width / 2, height / 2);
 }
-public void mousePressed()
-{
-  redraw();
+
+void mousePressed() {
+    redraw(); // Click to generate a new Tendron
 }
